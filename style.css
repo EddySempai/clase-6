@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1e56ff;
+    color: #e0e1dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.app-contenedor {
+    background-color: #1c2541;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.app-header p {
+    color: #90e0ef;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-seccion {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+.formulario-seccion input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #3a506b;
+    background-color: #0b123b;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formulario-seccion input:focus {
+    background-color: #48cae4;
+}
+
+.formulario-seccion button {
+    background-color: #48cae4;
+    color: #0b123b;
+    border: none;
+    padding: 0.8rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.formulario-section button:hover {
+    background-color: #90e0ef;
+}
+
+.lista-tareas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tarea-item {
+    background-color: #243356;
+    padding: 0.9rem 1.2rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2 ease;
+}
+
+.tarea-item span {
+    font-size: 0.95rem;
+}
+
+.tarea-item.completada span {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.btn-completar {
+    background-color: #10b981;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.btn-eliminar {
+    background-color: #e00;
+    border: #f00 solid 1px;
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 5px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6 - Gestor dinamico de tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <main class="app-contendor">
+        <header class="app-header">
+            <h1 id="titulo-app">Gestor de tareas de ingeneria</h1>
+            <p id="contenedor-tareas">Tareas pendientes: 0</p>
+        </header>
+
+        <!-- Formulario de entrada -->
+         <section class="formulario-seccion">
+            <input 
+                type="text"
+                id="input-tarea"
+                placeholder="Escribie una nueva tarea tecnica.."
+                autocomplete="off"
+            >
+            <button id="btn-agregar" type="button">Agregar</button>
+         </section>
+
+         <!-- Lista donde se inyectaran los elementos dinamicamente-->
+          <ul id="lista-tareas" class="lista-tareas"></ul>
+    </main>
+
+</body>
+</html>
